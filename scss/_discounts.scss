@@ -1,0 +1,37 @@
+.discounts {
+    background: #f8f7f7;
+    padding-top: 17px;
+    .wrapper {
+        padding: 17px 50px 17px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .table {
+        display: flex;
+        justify-content: center;
+        border: 1px solid #000000;
+        margin: 0;
+        padding: 9px 10px 8px;
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            margin: 0;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    
+}
+
+@media(max-width: 1200px) {
+    .discounts {
+        .table {
+            margin-bottom: 10px;
+        }
+    }
+}

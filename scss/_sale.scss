@@ -1,0 +1,379 @@
+.sale {
+    background-color: #f8f7f7;
+    .wrapper {
+        padding: 0px 160px 45px 160px;
+    }
+    .title {
+        text-align: center;
+        width: 100%;
+        font-family: Brusher;
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .bigblock {
+        margin-bottom: 20px;
+        position: relative;
+        .blocktext {
+            background-color: white;
+            padding: 22px 32px 31px 153px;
+            .price {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 126.56%;
+            }
+            .sometext {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 10px;
+                line-height: 150%;
+                max-width: 245px;
+            }
+            a {
+                text-decoration: none;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 9px;
+                line-height: 11px;
+                letter-spacing: 0.09em;
+                text-transform: uppercase;
+                color: black;
+                border-bottom: 1px solid black;
+            }
+        }
+        .blockbrand {
+            height: 80px;
+            width: 80px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: -60px;
+            left: 40px;
+            
+        }
+        .image {
+            position: relative;
+            img {
+                max-width: 100%;
+            }
+        }
+        .logo {
+            display: flex;
+            position: absolute;
+            top: 10px;
+            right: 13px;
+            padding: 3px 4px;
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+    }
+    .smallblock {
+        margin-bottom: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .image {
+            position: relative;
+            .banner {
+                max-width: 100%;
+            }
+
+            .logo {
+                display: flex;
+                position: absolute;
+                top: 10px;
+                right: 11px;
+                padding: 3px 4px;
+                background: rgba(255, 255, 255, 0.7);
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
+            .blockbrand {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                width: 90px;
+                height: 80px;
+                position: absolute;
+                top: 73px;
+                right: 78px;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            }
+        }
+        .blocktext {
+            background-color: white;
+            padding: 68px 5px 34px 5px;;
+            .price {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 126.56%;
+                text-align: center;
+                max-width: 200px;
+            }
+            .sometext {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 10px;
+                line-height: 150%;
+                text-align: center;
+            }
+            a {
+                text-decoration: none;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 9px;
+                line-height: 11px;
+                letter-spacing: 0.09em;
+                text-transform: uppercase;
+                border-bottom: 1px solid black;
+                color: black;
+            }
+        }
+    }
+    .showall {
+        position: relative;
+        margin-top: 26px;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    
+}
+
+.showall::after {
+    content: '';
+    height: 9px;
+    width: 89px;
+    background: #C2ADCC;
+    box-shadow: 0px 4px 6px rgba(253, 119, 87, 0.1);
+    position: absolute;
+    top: 6px;
+    right: 365px;
+    z-index: -1;
+}
+
+
+@media(max-width: 1200px) {
+    .sale {
+        .bigblock {
+            .blocktext {
+                max-width: 548px;
+            }
+        }
+        .smallblock {
+            .image {
+                .blockbrand {
+                    top: 50px;
+                    right: 50px;
+                }
+            }
+        }
+    }
+    .showall::after {
+        right: 278px;
+    }
+}
+
+
+@media(max-width: 992px) {
+    .sale {
+        .wrapper {
+            padding: 0 100px 45px 100px;
+        }
+        .smallblock {
+            .image {
+                .blockbrand {
+                    top: 70px;
+                    right: 70px;
+                }
+            }
+        }
+    }
+    .showall::after {
+        right: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sale {
+        .wrapper {
+            padding: 0 50px 45px 50px;
+            justify-content: center;
+            .bigblock {
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                .image {
+                    max-width: 548px;
+                }
+            }
+        }
+        .smallblock {
+            .image {
+                .blockbrand {
+                    top: 85px;
+                    right: 81px;   
+                }
+                .logo {
+                    top: 10px;
+                    right: 11px;
+                }
+            }
+        }
+    }
+    .showall::after {
+        right: 267px;
+    }
+}
+
+@media (max-width: 736px) {
+    .sale {
+        .wrapper {
+            padding: 0 50px 45px 50px;
+            justify-content: center;
+            .bigblock {
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                .image {
+                    max-width: 548px;
+                }
+            }
+        }
+        .smallblock {
+            max-width: 264px;
+            .image {
+                .blockbrand {
+                    top: 52px;
+                    right: 50px;   
+                }
+                .logo {
+                    top: 10px;
+                    right: 11px;
+                }
+            }
+        }
+    }
+    .showall::after {
+        right: 180px;
+    }
+}
+
+@media(max-width:667px) {
+    .sale {
+        .smallblock {
+            .image {
+                .blockbrand {
+                    top: 55px;
+                    right: 53px;
+                }
+            }
+        }
+    }
+    .showall::after {
+        right: 180px;
+    }
+}
+
+@media(max-width: 576px) {
+    .sale {
+        .wrapper {
+            padding: 0 0 20px;
+        }
+        .smallblock {
+            .image {
+                .blockbrand {
+                    top: 76px;
+                    right: 73px;
+                    
+                }
+            }
+        }   .blocktext {
+            max-width: 264px;
+        }
+    }
+    .showall::after {
+        right: 162px;
+    }
+}
+
+
+
+@media(max-width: 414px) {
+    .sale {
+        .wrapper {
+            .bigblock {
+                width: 295px;
+                .blocktext {
+                    padding: 66px 15px 31px 17px;
+                    text-align: center;
+                }
+                .blockbrand {
+                    left: 90px;
+                    top: 60px;
+                }
+            }
+        }
+        .smallblock {
+            max-width: 100%;
+            .image {
+                .blockbrand {
+                    top: 79px;
+                    left: 90px;
+                }
+                .logo {
+                    top: 10px;
+                    right: 11px;
+                }
+            }
+        }
+    }
+    .showall::after {
+        right: 164px;
+    }
+}
+
+@media(max-width: 375px) {
+    .sale {
+        .smallblock {
+            .image {
+                .blockbrand {
+                    top: 69px;
+                    right: 73px;
+                }
+            }
+        }
+        .smallblock {
+            .image {
+                .logo {
+                    top: 10px;
+                    right: 11px;
+                }
+            }
+        }
+    }
+    .showall::after {
+        right: 147px;
+    }
+}
+

@@ -1,0 +1,233 @@
+.salephone {
+    background-color: #f8f7f7;
+    padding-bottom: 40px;
+    .wrapper {
+        padding: 0 50px 0 50px;
+        width: 100%;
+    }
+    .bg {
+        padding: 73px 484px 20px 80px;
+        background-image: url(../image/bgdown.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        .textcontent {
+            h3 {
+                font-family: Brusher;
+                font-size: 46px;
+                line-height: 88%;
+                color: #FFFFFF;
+                max-width: 390px;
+            }
+            p {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 139%;
+                color: #FFFFFF;
+                max-width: 300px;
+            }
+            a {
+                position: relative;
+                text-decoration: none;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #000000;
+                z-index: 1;
+            }
+        }
+        .phone {
+            position: relative;
+            img {
+                position: absolute;
+                top: -43px;
+                right: -508px;
+                max-width: 115px;
+            }
+        }
+    }
+}
+
+.line::after {
+    content: '';
+    height: 10px;
+    width: 218px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 6px rgba(253, 119, 87, 0.1);
+    position: absolute;
+    top: 6px;
+    right: -5px;
+    z-index: -1;
+}
+
+
+@media(max-width: 1200px) {
+    .salephone {
+        .bg {
+            background-position-x: right;
+            .phone {
+                img {
+                    top: -37px;
+                    right: -414px;
+                    max-width: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .salephone {
+        .bg {
+            padding: 30px 265px 7px 80px;
+            background-position-x: right;
+            .textcontent {
+                h3 {
+                    font-size: 41px;
+                }
+            }
+            .phone {
+                img {
+                    top: -1px;
+                    right: -209px;
+                    max-width: 102px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .salephone {
+        .bg {
+            padding: 30px 210px 7px 15px;
+            .phone {
+                img {
+                    top: -10px;
+                    right: -174px;
+                    max-width: 84px;
+                }
+            }
+        }
+        .textcontent {
+            h3 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media(max-width: 736px) {
+    .salephone {
+        .wrapper {
+            padding: 0;
+        }
+        .bg {
+            .phone {
+                img {
+                    top: -8px;
+                    right: -168px;
+                    max-width: 84px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 667px) {
+    .salephone {
+        .wrapper {
+            padding: 0;
+        }
+        .bg {
+            .phone {
+                img {
+                    top: -10px;
+                    right: -168px;
+                    max-width: 84px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .salephone {
+        .bg {
+            padding: 65px 114px 7px 15px;
+            .textcontent {
+                h3 {
+                    font-size: 25px;
+                }
+                p {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 139%;
+                    color: #FFFFFF;
+                    max-width: 181px;
+                }
+            }
+            .phone {
+                img {
+                    top: -42px;
+                    right: -65px;
+                    max-width: 106px;                
+                }
+            }
+        }
+        
+    }
+}
+
+@media(max-width: 414px) {
+    .salephone {
+        .wrapper {
+            padding: 0;
+        }
+        .bg {
+            padding: 40px 93px 40px 15px;
+            .textcontent {
+                font-size: 31px;
+                h3 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .phone {
+                img {
+                    top: -10px;
+                    right: -29px;
+                    max-width: 119px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .salephone {
+        .bg {
+            padding: 11px 45px 7px 15px;
+            .phone {
+                img {
+                    top: 16px;
+                    right: 7px;
+                    max-width: 90px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,227 @@
+//Ліва частина header
+
+
+header {
+    position: relative;
+    padding: 27px 50px 25px;
+    color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    .logo {
+        padding-right: 43px;
+    }
+    .onleft {
+        align-items: flex-end;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #6A6A6A;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #6A6A6A;
+    text-transform: uppercase;
+    border-bottom: 2px solid #C2ADCC;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.08em;
+    padding-bottom: 5px;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    padding: 0;
+}
+
+li.nav-item.dropdown {
+    padding-left: 35px;
+}
+
+.dropdown-menu {
+    .dropdown-item {
+        color: #6A6A6A;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.08em;
+    }
+}
+
+@media(max-width: 992px) {
+    header {
+        .logo {
+            margin-bottom: 15px;
+        }
+        li.nav-item.dropdown {
+            padding-left: 0;
+        }
+        .onleft {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+       padding: 0;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link.custom{
+        padding-left: 32px;
+     }
+}
+
+@media(max-width: 768px) {
+    header {
+        .onleft {
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    header {
+        .onleft {
+            justify-content: center;
+        }
+    }
+}
+
+
+
+
+// Права частина header
+header {
+    .onright {
+        .search {
+            padding-right: 15px;
+            cursor: pointer;
+        }
+        .facelogo {
+            padding-right: 14px;
+            cursor: pointer;
+        }
+        .reg {
+            text-decoration: none;
+            color: #C2ADCC;
+            padding-right: 13px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+        }
+        .singin {
+            text-decoration: none;
+            color: #FFFFFF;
+            background-color:#C2ADCC;
+            padding: 8px 24px 6px 28px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 9px;
+            line-height: 11px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 4px;
+    content: url(../image/dropdown.svg);
+    border: 0;
+}
+
+
+@media(min-width: 1200px) {
+    header {
+        .onright {
+            justify-content: flex-end;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .onright {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 736px) {
+        header {
+        .pos-rel {
+            position: relative;
+        }
+        .onleft {
+            justify-content: flex-start;
+        }
+        .onright {
+            position: absolute;
+            right: -22px;
+            top: 8px;
+            .singin {
+                margin-top: 22px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 667px) {
+    header {
+        .onright {
+            right: -5px;
+
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+   header {
+        .onright {
+            margin-top: 15px;
+            .singin {
+                display: inline-block;
+            }
+        }
+   }
+}
+
+@media(max-width: 414px) {
+    header {
+
+        .onright {
+            position: absolute;
+            right: -45px;
+            margin: 0;
+            max-width: 230px;
+        }
+    }
+    .slick-dots {
+        max-width: 340px;
+    }
+}
+
+@media(max-width: 375px) {
+    header {
+        .onright {
+            right: -44px;
+        }
+        
+    }
+    .slick-dots {
+        max-width: 350px;
+    }
+}
