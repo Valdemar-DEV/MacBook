@@ -84,7 +84,7 @@ li.nav-item.dropdown {
 @media(max-width: 768px) {
     header {
         .onleft {
-            justify-content: center;
+            justify-content: flex-start;
         }
     }
 }
