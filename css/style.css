@@ -773,6 +773,10 @@ header .onright .singin {
 
   .showall::after {
     right: 267px; } }
+@media (max-width: 767px) {
+  .sale .wrapper .smallblock .image .blockbrand {
+    top: 55px;
+    right: 55px; } }
 @media (max-width: 736px) {
   .sale .wrapper {
     padding: 0 50px 45px 50px;
