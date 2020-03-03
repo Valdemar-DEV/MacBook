@@ -251,7 +251,8 @@ header .onright .singin {
 
 .slick-dots {
   bottom: 27px;
-  left: 20px; }
+  left: 20px;
+  max-width: 93%; }
 
 .slick-dotted.slick-slider {
   margin-bottom: 0;
