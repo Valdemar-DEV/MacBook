@@ -251,7 +251,8 @@ header .onright .singin {
 
 .slick-dots {
   bottom: 27px;
-  left: 20px; }
+  left: 20px;
+  max-width: 93%; }
 
 .slick-dotted.slick-slider {
   margin-bottom: 0;
@@ -291,6 +292,13 @@ header .onright .singin {
     padding: 37px 21px 30px 30px;
     background-color: #B4CBD2;
     width: 25%; }
+    .steps .step1 a {
+      text-decoration: none;
+      font-family: Brusher;
+      font-size: 32px;
+      line-height: 98.2%;
+      color: #FFFFFF;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25); }
     .steps .step1 .todo {
       font-family: Brusher;
       font-size: 36px;
@@ -766,6 +774,10 @@ header .onright .singin {
 
   .showall::after {
     right: 267px; } }
+@media (max-width: 767px) {
+  .sale .wrapper .smallblock .image .blockbrand {
+    top: 55px;
+    right: 55px; } }
 @media (max-width: 736px) {
   .sale .wrapper {
     padding: 0 50px 45px 50px;
